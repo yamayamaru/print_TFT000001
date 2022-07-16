@@ -28,3 +28,6 @@ print_TFT000001_Canvas1に描画しておき、TFT000001やprint_TFT000001のdra
   
 print_TFT000001_Canvas8に描画しておき、TFT000001やprint_TFT000001のdrawPalette256BitmapやdrawGrayscaleBitmapでprint_TFT000001_Canvas8のバッファの内容をLCDに書き込むことで8bitカラーや8bitグレイスケールのフレームバッファのように扱えます。  
   
+
+## 変更履歴
+* 0.0.1          2022/07/16 初版アップ  
