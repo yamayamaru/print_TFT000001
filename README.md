@@ -1,1 +1,30 @@
-# print_TFT000001
+# print_TFT0001
+  
+print_TFT000001はRaspberry Pi PicoのC/C++開発ツールのpico-sdk用のグラフィックスライブラリであるTFT000001に簡易的な文字表示機能を付け加えるライブラリです。  
+print_TFT000001を使うためにはTFT000001が必要になります。  
+(TFT000001 Version 0.0.2が必要)  
+https://github.com/yamayamaru/TFT000001  
+プログラム全体がC++で書かれていてC++用のライブラリになります。   
+表示できる文字はASCIIコードの英数字、記号のみです。  
+文字の画面スクロールの機能は実装してません。  
+  
+print_TFT000001はMicroPython用のライブラリであるmicropython-ili9341を参考にして作成しました  
+https://github.com/jeffmer/micropython-ili9341  
+  
+print_TFT000001はTFT000001を継承していて直接ILI9341に文字を描画するためのライブラリです。  
+print_TFT000001はTFT000001を継承していてTFT000001の全機能が使用できます。  
+  
+print_TFT000001_Canvas16はTFT000001のyama_2_GFX_H_beta_Canvas16を継承していてメモリに確保したバッファに文字を描画するためのライブラリです。  
+print_TFT000001_Canvas16はyama_2_GFX_H_beta_Canvas16を継承していてyama_2_GFX_H_beta_Canvas16の全機能が使用できます。  
+print_TFT000001_Canvas16に描画しておき、TFT000001やprint_TFT000001のdrawRGBBitmap16でprint_TFT000001_Canvas16のバッファの内容をLCDに書き込むことで16bitカラーのフレームバッファのように扱えます。  
+drawRGBBitmap16はカラーモードが18bitの場合でも自動的に変換して表示できます。  
+  
+print_TFT000001_Canvas24はTFT000001のyama_2_GFX_H_beta_Canvas24を継承していてメモリに確保したバッファに文字を描画するためのライブラリです。  
+print_TFT000001_Canvas24はyama_2_GFX_H_beta_Canvas24を継承していてyama_2_GFX_H_beta_Canvas24の全機能が使用できます。  
+print_TFT000001_Canvas24に描画しておき、TFT000001やprint_TFT000001のdrawRGBBitmap24でprint_TFT000001_Canvas24のバッファの内容をLCDに書き込むことで16bitカラーのフレームバッファのように扱えます。  
+drawRGBBitmap24はカラーモードが16bitの場合でも自動的に16bitカラーに変換して表示できます。  
+  
+print_TFT000001_Canvas1に描画しておき、TFT000001やprint_TFT000001のdrawBitmapでprint_TFT000001_Canvas1のバッファの内容をLCDに書き込むことで1bitモノクロのフレームバッファのように扱えます。  
+  
+print_TFT000001_Canvas8に描画しておき、TFT000001やprint_TFT000001のdrawPalette256BitmapやdrawGrayscaleBitmapでprint_TFT000001_Canvas8のバッファの内容をLCDに書き込むことで8bitカラーや8bitグレイスケールのフレームバッファのように扱えます。  
+  
