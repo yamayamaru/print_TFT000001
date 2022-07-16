@@ -26,7 +26,7 @@ print_TFT000001.h
 print_TFT000001.cpp  
 TFT000001.h  
 TFT000001.cpp  
-pio_8bit_parallel.pio
+pio_8bit_parallel.pio  
 TFT000001_config.h
   
 上記ファイルを同じディレクトリに入れてビルドしてください。  
