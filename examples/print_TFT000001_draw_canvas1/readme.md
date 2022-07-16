@@ -32,7 +32,7 @@ TFT000001_config.h
 上記ファイルを同じディレクトリに入れてビルドしてください。  
 ビルド前にTFT000001_config.hの中で  
 ILI9341なのか、ILI9486なのか(ILI9341なら#define TFT000001_ILI9486_DISPLAYをコメントアウト)  
-PIOなのかSPIなのか(SPIなら#define TFT000001_PIO_8BIT_PARALELLをコメントアウト)  
+8BIT PARALLELなのかSPIなのか(SPIなら#define TFT000001_PIO_8BIT_PARALELLをコメントアウト)  
 の設定を必ずしてください。  
   
 CMakeLists.txtでpico-sdkのprintfの出力がUART0になっています。  
